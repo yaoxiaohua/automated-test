@@ -1,0 +1,35 @@
+testinfo:
+    - id: test100
+      title: 基础产品信息库管理
+      info: 应用验证信息管理-元器件
+testcase:
+    - element_info: //*[@id="side-menu"]/li[4]/a/span[1]
+      find_type: xpath
+      operate_type: click
+      info: 点击基础产品信息库管理
+      is_time: 1
+    - element_info: //*[@id="side-menu"]/li[4]/ul/li[1]/a
+      find_type: xpath
+      operate_type: click
+      info: 点击元器件
+      is_time: 1
+    - element_info: //*[@id="side-menu"]/li[4]/ul/li[1]/a[2]/b
+      find_type: xpath
+      operate_type: click
+      info: 点击基础信息
+      is_time: 1
+    - element_info: //iframe[contains(@src,'/component/product')]
+      find_type: xpath
+      operate_type: switch_frame
+      info: 切换frame
+      is_time: 1
+    - element_info: "0"
+      find_type:
+      operate_type: click_excel_ele
+      info: 点击对应选择框
+      is_time: 5
+check:
+    - element_info: //button[contains(text(),'保存')]
+      find_type: xpath
+      check: contrary
+      info: 验证不存在提交按钮

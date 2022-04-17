@@ -1,0 +1,219 @@
+testinfo:
+    - id: test007
+      title: 基础产品信息库管理
+      info: 个人中心-审核
+testcase:
+#    - element_info: //span[contains(text(),'个人中心')]
+#      find_type: xpath
+#      operate_type: click
+#      info: 点击个人中心
+#      is_time: 1
+#    - element_info: //a[@class='menuItem' and contains(text(),'待办任务')]
+#      find_type: xpath
+#      operate_type: click
+#      info: 点击待办任务
+#      is_time: 1
+#    - element_info: //iframe[contains(@src,'/activiti/task/todo')]
+#      find_type: xpath
+#      operate_type: switch_frame
+#      info: 切换frame
+#      is_time: 1
+#    - element_info: //tr[@data-index='0']//*[@class='btn btn-danger btn-xs']
+#      find_type: xpath
+#      operate_type: click
+#      info: 点击签收任务
+#      is_time: 1
+    - element_info: //span[contains(text(),'主页')]
+      find_type: xpath
+      operate_type: click
+      info: 点击主页
+      is_time: 3
+    - element_info: //iframe[contains(@src,'/system/main')]
+      find_type: xpath
+      operate_type: switch_frame
+      info: 切换frame
+      is_time: 1
+    - element_info: //ul[@class='row m0 auditList']/li[1]/a/div
+      find_type: xpath
+      operate_type: click
+      info: 点击待办任务第一条
+      is_time: 3
+    - element_info: //*[@id="layui-layer-iframe1"]
+      find_type: xpath
+      operate_type: switch_frame
+      info: 切换frame
+      is_time: 1
+    - element_info: auditors
+      find_type: id
+      operate_type: switch_to_ele
+      info: 定位到审批人
+      is_time: 1
+    - element_info: auditors
+      find_type: id
+      operate_type: click
+      info: 点击选择审核人
+      is_time: 1
+    - element_info: //iframe[contains(@src,'/system/user/selectPerson/0/auditors?secret=0')]
+      find_type: xpath
+      operate_type: switch_frame
+      info: 切换frame
+      is_time: 1
+    - element_info: //*[@id="searchEmployeeStaffSelect"]
+      find_type: xpath
+      operate_type: send_keys
+      msg:  测试001
+      info: 输入测试001
+    - element_info: //button[contains(text(),'查')]
+      find_type: xpath
+      operate_type: click
+      info: 点击搜索
+      is_time: 1
+    - element_info: //button[contains(text(),'>')]
+      find_type: xpath
+      operate_type: click
+      info: 点击选中
+      is_time: 1
+    - element_info: //*[@id="saveButtonForStaff"]
+      find_type: xpath
+      operate_type: click
+      info: 点击确定
+      is_time: 1
+    - element_info: "0"
+      find_type:
+      operate_type: switch_parent_frame
+      info: 切换上级frame
+      is_time: 1
+    - element_info: summary
+      find_type: id
+      operate_type: send_keys_and_random
+      msg:  审批意见通过
+      info: 填写审批意见
+    - element_info: //button[contains(text(),'提交')]
+      find_type: xpath
+      operate_type: click
+      info: 点击提交
+      is_time: 1
+
+    - element_info: "0"
+      find_type:
+      operate_type: switch_default_frame
+      info: 切换默认frame
+      is_time: 1
+    - element_info: //span[contains(text(),'主页')]
+      find_type: xpath
+      operate_type: click
+      info: 点击主页
+      is_time: 3
+    - element_info: //iframe[contains(@src,'/system/main')]
+      find_type: xpath
+      operate_type: switch_frame
+      info: 切换frame
+      is_time: 1
+    - element_info: //ul[@class='row m0 auditList']/li[1]/a/div
+      find_type: xpath
+      operate_type: click
+      info: 点击待办任务第一条
+      is_time: 3
+    - element_info: //*[@id="layui-layer-iframe1"]
+      find_type: xpath
+      operate_type: switch_frame
+      info: 切换frame
+      is_time: 1
+    - element_info: auditors
+      find_type: id
+      operate_type: switch_to_ele
+      info: 定位到审批人
+      is_time: 1
+    - element_info: auditors
+      find_type: id
+      operate_type: click
+      info: 点击选择审核人
+      is_time: 1
+    - element_info: //iframe[contains(@src,'/system/user/selectPerson/0/auditors?secret=0')]
+      find_type: xpath
+      operate_type: switch_frame
+      info: 切换frame
+      is_time: 1
+    - element_info: //*[@id="searchEmployeeStaffSelect"]
+      find_type: xpath
+      operate_type: send_keys
+      msg:  测试001
+      info: 输入测试001
+    - element_info: //button[contains(text(),'查')]
+      find_type: xpath
+      operate_type: click
+      info: 点击搜索
+      is_time: 1
+    - element_info: //button[contains(text(),'>')]
+      find_type: xpath
+      operate_type: click
+      info: 点击选中
+      is_time: 1
+    - element_info: //*[@id="saveButtonForStaff"]
+      find_type: xpath
+      operate_type: click
+      info: 点击确定
+      is_time: 1
+    - element_info: "0"
+      find_type:
+      operate_type: switch_parent_frame
+      info: 切换上级frame
+      is_time: 1
+    - element_info: summary
+      find_type: id
+      operate_type: send_keys_and_random
+      msg:  审批意见通过
+      info: 填写审批意见
+    - element_info: //button[contains(text(),'提交')]
+      find_type: xpath
+      operate_type: click
+      info: 点击提交
+      is_time: 1
+
+    - element_info: "0"
+      find_type:
+      operate_type: switch_default_frame
+      info: 切换默认frame
+      is_time: 1
+    - element_info: //span[contains(text(),'主页')]
+      find_type: xpath
+      operate_type: click
+      info: 点击主页
+      is_time: 3
+    - element_info: //iframe[contains(@src,'/system/main')]
+      find_type: xpath
+      operate_type: switch_frame
+      info: 切换frame
+      is_time: 1
+    - element_info: //ul[@class='row m0 auditList']/li[1]/a/div
+      find_type: xpath
+      operate_type: click
+      info: 点击待办任务第一条
+      is_time: 3
+    - element_info: //*[@id="layui-layer-iframe1"]
+      find_type: xpath
+      operate_type: switch_frame
+      info: 切换frame
+      is_time: 1
+    - element_info: summary
+      find_type: id
+      operate_type: send_keys_and_random
+      msg:  审批意见通过
+      info: 填写审批意见
+    - element_info: //button[contains(text(),'提交')]
+      find_type: xpath
+      operate_type: click
+      info: 点击提交
+      is_time: 1
+
+#    - element_info: ul.list-group > li:nth-child(1) > div.title > a:nth-child(2)
+#      find_type: css
+#      operate_type: click
+#      info: 点击
+
+check:
+
+    - element_info: //button[contains(text(),'确定')]
+      find_type: xpath
+      check: contrary
+      info: 验证不存在提交按钮

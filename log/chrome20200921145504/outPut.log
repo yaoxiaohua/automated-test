@@ -1,0 +1,8 @@
+2020-09-21 14:55:04,415  - INFO - ----  test001_登录成功_//*[@id="signupForm"]/input[1]_xpath_send_keys_wxy        ----
+2020-09-21 14:55:04,985  - INFO - ----  test001_登录成功_//*[@id="signupForm"]/input[2]_xpath_send_keys_Wxy123456        ----
+2020-09-21 14:55:06,582  - INFO - ----  test001_登录成功_//*[@id="signupForm"]/button_xpath_click_         ----
+2020-09-21 14:55:09,646  - INFO - ----  test008_基础产品信息库管理_//*[@id="side-menu"]/li[4]/a/span[1]_xpath_click_         ----
+2020-09-21 14:55:10,701  - INFO - ----  test008_基础产品信息库管理_//*[@id="side-menu"]/li[4]/ul/li[1]/a_xpath_click_         ----
+2020-09-21 14:55:11,747  - INFO - ----  test008_基础产品信息库管理_//*[@id="side-menu"]/li[4]/ul/li[1]/a[2]/b_xpath_click_         ----
+2020-09-21 14:55:12,800  - INFO - ----  test008_基础产品信息库管理_//iframe[contains(@src,'/component/product')]_xpath_switch_frame_         ----
+2020-09-21 14:55:13,825  - INFO - ----  test008_基础产品信息库管理_0_None_click_excel_ele_         ----

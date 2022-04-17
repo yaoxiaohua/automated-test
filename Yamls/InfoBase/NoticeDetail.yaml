@@ -1,0 +1,81 @@
+testinfo:
+    - id: test002
+      title: 基础产品信息库管理
+      info: 应用验证信息管理-军用电子元器件-新增进口产品信息
+testcase:
+    - element_info: //*[@id="side-menu"]/li[4]/a/span[1]
+      find_type: xpath
+      operate_type: click
+      info: 点击基础产品信息库管理
+    - element_info: //*[@id="side-menu"]/li[4]/ul/li[6]/a
+      find_type: xpath
+      operate_type: click
+      info: 点击应用验证信息管理
+      is_time: 1
+    - element_info: //iframe[contains(@src,'/dataCollection/dataCollection')]
+      find_type: xpath
+      operate_type: switch_frame
+      info: 切换frame
+      is_time: 1
+    - element_info: //*[@class="btn btn-outline btn-default"][1]
+      find_type: xpath
+      operate_type: click
+      info: 点击新增
+      is_time: 1
+    - element_info: "0"
+      find_type:
+      operate_type: switch_default_frame
+      info: 切换默认frame
+      is_time: 1
+    - element_info: //iframe[contains(@src,'/dataCollection/dataCollection/add')]
+      find_type: xpath
+      operate_type: switch_frame
+      info: 切换frame
+      is_time: 1
+    - element_info: select2-territory-container
+      find_type: id
+      operate_type: click
+      info: 点击选择框
+      is_time: 1
+    - element_info: //*[@id="select2-territory-results"]/li[2]
+      find_type: xpath
+      operate_type: click
+      info: 选择军用电子元器件
+      is_time: 1
+    - element_info: catId
+      find_type: id
+      operate_type: click
+      info: 点击类别
+      is_time: 1
+    - element_info: sel_ul_catId_1_switch
+      find_type: id
+      operate_type: click
+      info: 点击器件类别
+      is_time: 1
+    - element_info: catId
+      find_type: id
+      operate_type: click
+      info: 点击类别
+      is_time: 1
+    - element_info: sel_ul_catId_2_switch
+      find_type: id
+      operate_type: click
+      info: 点击类别
+      is_time: 1
+    - element_info: sel_ul_catId_3_switch
+      find_type: id
+      operate_type: click
+      info: 点击类别
+      is_time: 1
+    - element_info: sel_ul_catId_4_span
+      find_type: id
+      operate_type: click
+      info: 点击类别
+      is_time: 1
+
+
+
+check:
+    - element_info: div.alert-warning
+      find_type: css
+      info: 出现错误的密码登录不成功提示框

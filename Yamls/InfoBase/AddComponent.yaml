@@ -1,0 +1,363 @@
+testinfo:
+    - id: test007
+      title: 基础产品信息库管理
+      info: 应用验证信息管理-元器件
+testcase:
+#    - element_info: //*[@id="side-menu"]/li[4]/a/span[1]
+#      find_type: xpath
+#      operate_type: click
+#      info: 点击基础产品信息库管理
+#      is_time: 1
+    - element_info: //*[@id="side-menu"]/li[4]/a/span[1]
+      find_type: xpath
+      operate_type: click
+      info: 点击基础产品信息库管理
+      is_time: 1
+    - element_info: //*[@id="side-menu"]/li[4]/ul/li[1]/a
+      find_type: xpath
+      operate_type: click
+      info: 点击元器件
+      is_time: 1
+    - element_info: //*[@id="side-menu"]/li[4]/ul/li[1]/a[2]/b
+      find_type: xpath
+      operate_type: click
+      info: 点击基础信息
+      is_time: 1
+    - element_info: //iframe[contains(@src,'/component/product')]
+      find_type: xpath
+      operate_type: switch_frame
+      info: 切换frame
+      is_time: 1
+    - element_info: //*[@class="btn btn-outline btn-default"][1]
+      find_type: xpath
+      operate_type: click
+      info: 点击新增
+      is_time: 1
+    - element_info: "0"
+      find_type:
+      operate_type: switch_default_frame
+      info: 切换默认frame
+      is_time: 1
+    - element_info: //iframe[contains(@src,'/component/product/add')]
+      find_type: xpath
+      operate_type: switch_frame
+      info: 切换frame
+      is_time: 1
+    - element_info: proNo
+      find_type: id
+      operate_type: send_keys_and_random
+      msg:  元器件物资编码
+      info: 填写物资编码
+    - element_info: proNo
+      find_type: id
+      operate_type: write_data
+      info: 获取信息
+      is_time: 2
+#    - element_info: //div[@class='fixed-table-body']//tbody/tr[1]/td[3]
+#      find_type: xpath
+#      operate_type: write_data
+#      info: 获取信息
+#      is_time: 5
+    - element_info: proName
+      find_type: id
+      operate_type: send_keys_and_random
+      msg:  元器件器件名称
+      info: 填写器件名称
+    - element_info: proModel
+      find_type: id
+      operate_type: send_keys_and_random
+      msg:  元器件器件型号
+      info: 填写器件型号
+    - element_info: catId
+      find_type: id
+      operate_type: click
+      info: 点击类别
+      is_time: 1
+    - element_info: sel_ul_catId_1_switch
+      find_type: id
+      operate_type: click
+      info: 点击器件类别
+      is_time: 1
+    - element_info: catId
+      find_type: id
+      operate_type: click
+      info: 点击类别
+      is_time: 1
+    - element_info: sel_ul_catId_2_switch
+      find_type: id
+      operate_type: click
+      info: 点击类别
+      is_time: 1
+    - element_info: sel_ul_catId_3_switch
+      find_type: id
+      operate_type: click
+      info: 点击类别
+      is_time: 1
+    - element_info: sel_ul_catId_4_span
+      find_type: id
+      operate_type: click
+      info: 点击类别
+      is_time: 1
+    - element_info: //*[@id="select2-supplierList-container"]
+      find_type: xpath
+      operate_type: click
+      info: 点击生产厂商
+    - element_info: //*[@id="select2-supplierList-results"]/li[2]
+      find_type: xpath
+      operate_type: click
+      info: 点击选择第二个
+    - element_info: select2-chooseLevel-container
+      find_type: id
+      operate_type: click
+      info: 点击选用等级
+    - element_info: //*[@id="select2-chooseLevel-results"]/li[2]
+      find_type: xpath
+      operate_type: click
+      info: 点击选择优选
+    - element_info: supplierContactWay
+      find_type: id
+      operate_type: random_Phone
+      msg:  1
+      info: 填写手机号
+    - element_info: select2-safetyLevel-container
+      find_type: id
+      operate_type: click
+      info: 点击安全等级颜色
+    - element_info: //*[@id="select2-safetyLevel-results"]/li[4]
+      find_type: xpath
+      operate_type: click
+      info: 点击选择
+    - element_info: //*[@id="select2-isEncapsulateDomesticPro-container"]
+      find_type: xpath
+      operate_type: click
+      info: 点击是否为封装国产化产品
+    - element_info: //*[@id="select2-isEncapsulateDomesticPro-results"]/li[2]
+      find_type: xpath
+      operate_type: click
+      info: 点击是
+    - element_info: //input[@class='form-control col-md-2 w120 mr20 attr-input wd-start' and @placeholder='最小值']
+      find_type: xpath
+      operate_type: send_keys
+      msg:  111
+      info: 填写最小值
+    - element_info: //input[@class='form-control col-md-2 w120 mr20 attr-input' and @placeholder='最大值']
+      find_type: xpath
+      operate_type: send_keys
+      msg:  222
+      info: 填写最大值
+    - element_info: //input[@class='form-control col-md-2 w120 mr20 attr-input' and @placeholder='典型值']
+      find_type: xpath
+      operate_type: send_keys
+      msg:  155
+      info: 填写典型值
+    - element_info: //input[@class='form-control col-md-2 w120 mr20 attr-input ccwd-start' and @placeholder='最小值']
+      find_type: xpath
+      operate_type: send_keys
+      msg:  122
+      info: 填写最小值
+    - element_info: //input[@class='form-control col-md-2 w120 mr20 attr-input' and @placeholder='最大值']
+      find_type: xpath
+      operate_type: send_keys
+      msg:  233
+      info: 填写最大值
+    - element_info: //input[@class='form-control col-md-2 w120 mr20 attr-input' and @placeholder='典型值']
+      find_type: xpath
+      operate_type: send_keys
+      msg:  166
+      info: 填写典型值
+    - element_info: //*[@id="select2-proType-container"]
+      find_type: xpath
+      operate_type: click
+      info: 点击器件类型
+    - element_info: //*[@id="select2-proType-results"]/li[2]
+      find_type: xpath
+      operate_type: click
+      info: 选择进口
+    - element_info: select2-maturity-container
+      find_type: id
+      operate_type: click
+      info: 点击成熟度
+    - element_info: //*[@id="select2-maturity-results"]/li[2]
+      find_type: xpath
+      operate_type: click
+      info: 选择CRL5
+    - element_info: //*[@id="pdmanual"]/div[2]/div[2]/input
+      find_type: xpath
+      operate_type: send_keys
+      msg:  C:\\Users\\0413\\Documents\\测试 - 副本 (1).doc
+      info: 上传详细规范
+      is_time: 1
+
+    - element_info: standardAll
+      find_type: id
+      operate_type: switch_to_ele
+      info: 定位到通用规范
+      is_time: 1
+    - element_info: standardAll
+      find_type: id
+      operate_type: send_keys_and_random
+      msg:  通用规范
+      info: 填写通用规范
+    - element_info: standardDetailName
+      find_type: id
+      operate_type: send_keys_and_random
+      msg:  详细规范名称
+      info: 填写详细规范名称
+    - element_info: select2-qualityLevel-container
+      find_type: id
+      operate_type: click
+      info: 点击质量等级
+    - element_info: //*[@id="select2-qualityLevel-results"]/li[2]
+      find_type: xpath
+      operate_type: click
+      info: 选择第二个
+    - element_info: reliabilityLevel
+      find_type: id
+      operate_type: send_keys_and_random
+      msg:  质量保证等级
+      info: 填写质量保证等级
+    - element_info: select2-proVerify-container
+      find_type: id
+      operate_type: click
+      info: 点击质量等级
+    - element_info: //*[@id="select2-proVerify-results"]/li[2]
+      find_type: xpath
+      operate_type: click
+      info: 选择第二个
+    - element_info: qualityData
+      find_type: id
+      operate_type: send_keys_and_random
+      msg:  质量信息
+      info: 填写质量信息
+    - element_info: //*[@id="general_specification"]/div[2]/div[2]/input
+      find_type: xpath
+      operate_type: send_keys
+      msg:  C:\\Users\\0413\\Documents\\测试 - 副本 (2).doc
+      info: 上传详细规范
+      is_time: 1
+    - element_info: //*[@id="standard_detail"]/div[2]/div[2]/input
+      find_type: xpath
+      operate_type: send_keys
+      msg:  C:\\Users\\0413\\Documents\\测试 - 副本 (4).doc
+      info: 上传详细规范
+      is_time: 1
+
+    - element_info: packageType
+      find_type: id
+      operate_type: send_keys
+      msg:  元器件封装形式
+      info: 填写封装形式
+    - element_info: dimension
+      find_type: id
+      operate_type: send_keys_and_random
+      msg:  外形尺寸
+      info: 填写外形尺寸
+    - element_info: //*[@id="theory_symc_name"]/div[2]/div[2]/input
+      find_type: xpath
+      operate_type: send_keys
+      msg:  C:\\Users\\0413\\Documents\\测试 - 副本 (4).zip
+      info: 上传详细规范
+      is_time: 1
+    - element_info: //*[@id="print_symc_name"]/div[2]/div[2]/input
+      find_type: xpath
+      operate_type: send_keys
+      msg:  C:\\Users\\0413\\Documents\\测试 - 副本 (5).zip
+      info: 上传详细规范
+      is_time: 1
+    - element_info: //*[@id="information_name"]/div[2]/div[2]/input
+      find_type: xpath
+      operate_type: send_keys
+      msg:  C:\\Users\\0413\\Documents\\测试 - 副本 (6).doc
+      info: 上传详细规范
+      is_time: 1
+    - element_info: imgUrl
+      find_type: id
+      operate_type: switch_to_ele
+      info: 定位到相关图片
+      is_time: 1
+    - element_info: //*[@id="imgUrl"]/div[2]/div[2]/input
+      find_type: xpath
+      operate_type: send_keys
+      msg:  C:\\Users\\0413\\Documents\\测试-图片1.jpg
+      info: 上传详细规范
+      is_time: 1
+
+    - element_info: //button[contains(text(),'保存')]
+      find_type: xpath
+      operate_type: switch_to_ele
+      info: 定位到保存
+      is_time: 1
+    - element_info: //button[contains(text(),'保存')]
+      find_type: xpath
+      operate_type: click
+      info: 点击保存
+      is_time: 1
+
+#    - element_info: //*[@id="form-product-add"]/div/div/button[1]
+#      find_type: xpath
+#      operate_type: click
+#      info: 点击提交
+#      is_time: 1
+#    - element_info: //*[@id="layui-layer-iframe1"]
+#      find_type: xpath
+#      operate_type: switch_frame
+#      info: 切换frame
+#      is_time: 1
+#    - element_info: auditors
+#      find_type: id
+#      operate_type: click
+#      info: 点击选择审核人
+#      is_time: 1
+#    - element_info: //iframe[contains(@src,'/system/user/selectPerson/0/auditors?secret=0')]
+#      find_type: xpath
+#      operate_type: switch_frame
+#      info: 切换frame
+#      is_time: 1
+#    - element_info: //*[@id="searchEmployeeStaffSelect"]
+#      find_type: xpath
+#      operate_type: send_keys
+#      msg:  测试001
+#      info: 输入测试001
+#    - element_info: //button[contains(text(),'查')]
+#      find_type: xpath
+#      operate_type: click
+#      info: 点击搜索
+#      is_time: 1
+#    - element_info: //button[contains(text(),'>')]
+#      find_type: xpath
+#      operate_type: click
+#      info: 点击选中
+#      is_time: 1
+#    - element_info: //*[@id="saveButtonForStaff"]
+#      find_type: xpath
+#      operate_type: click
+#      info: 点击确定
+#      is_time: 1
+#    - element_info: "0"
+#      find_type:
+#      operate_type: switch_parent_frame
+#      info: 切换上级frame
+#      is_time: 1
+#    - element_info: //button[contains(text(),'确定')]
+#      find_type: xpath
+#      operate_type: click
+#      info: 点击确定
+#      is_time: 1
+#    - element_info: //a[@class='layui-layer-btn0']
+#      find_type: xpath
+#      operate_type: click
+#      info: 点击确定
+#      is_time: 1
+
+
+#    - element_info: ul.list-group > li:nth-child(1) > div.title > a:nth-child(2)
+#      find_type: css
+#      operate_type: click
+#      info: 点击
+
+check:
+
+    - element_info: //button[contains(text(),'保存')]
+      find_type: xpath
+      check: contrary
+      info: 验证不存在提交按钮

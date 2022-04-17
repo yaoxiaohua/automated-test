@@ -1,0 +1,15 @@
+2020-09-16 14:02:47,802  - INFO - ----  test001_登录成功_//*[@id="signupForm"]/input[1]_xpath_send_keys_wxy        ----
+2020-09-16 14:02:48,369  - INFO - ----  test001_登录成功_//*[@id="signupForm"]/input[2]_xpath_send_keys_Wxy123456        ----
+2020-09-16 14:02:49,929  - INFO - ----  test001_登录成功_//*[@id="signupForm"]/button_xpath_click_         ----
+2020-09-16 14:02:52,283  - INFO - ----  test008_基础产品信息库管理_//*[@id="side-menu"]/li[4]/a/span[1]_xpath_click_         ----
+2020-09-16 14:02:53,398  - INFO - ----  test008_基础产品信息库管理_//*[@id="side-menu"]/li[4]/ul/li[1]/a_xpath_click_         ----
+2020-09-16 14:02:54,448  - INFO - ----  test008_基础产品信息库管理_//*[@id="side-menu"]/li[4]/ul/li[1]/a[2]/b_xpath_click_         ----
+2020-09-16 14:02:55,513  - INFO - ----  test008_基础产品信息库管理_//iframe[contains(@src,'/component/product')]_xpath_switch_frame_         ----
+2020-09-16 14:02:56,537  - INFO - ----  test008_基础产品信息库管理_0_None_click_excel_ele_         ----
+2020-09-16 14:02:59,642  - INFO - ----  test008_基础产品信息库管理_//*[@id="toolbar"]/div/button[2]_xpath_click_         ----
+2020-09-16 14:03:00,726  - INFO - ----  test008_基础产品信息库管理_//iframe[contains(@src,'/component/product/edit')]_xpath_switch_frame_         ----
+2020-09-16 14:03:01,787  - INFO - ----  test008_基础产品信息库管理_select2-safetyLevel-container_id_click_         ----
+2020-09-16 14:03:01,917  - INFO - ----  test008_基础产品信息库管理_//*[@id="select2-safetyLevel-results"]/li[3]_xpath_click_         ----
+2020-09-16 14:03:02,030  - INFO - ----  test008_基础产品信息库管理_//button[contains(text(),'保存')]_xpath_switch_to_ele_         ----
+2020-09-16 14:03:03,056  - INFO - ----  test008_基础产品信息库管理_//button[contains(text(),'保存')]_xpath_click_         ----
+2020-09-16 14:03:25,531  - INFO - [CheckPoint_1]: testAmyAdd_ : OK

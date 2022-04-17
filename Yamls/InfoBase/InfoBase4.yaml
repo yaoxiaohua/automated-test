@@ -1,0 +1,450 @@
+testinfo:
+    - id: test006
+      title: 基础产品信息库管理
+      info: 应用验证信息管理-军用测试仪器
+testcase:
+    - element_info: //*[@id="side-menu"]/li[4]/a/span[1]
+      find_type: xpath
+      operate_type: click
+      info: 点击基础产品信息库管理
+    - element_info: //*[@id="side-menu"]/li[4]/ul/li[6]/a
+      find_type: xpath
+      operate_type: click
+      info: 点击应用验证信息管理
+      is_time: 1
+    - element_info: //iframe[contains(@src,'/dataCollection/dataCollection')]
+      find_type: xpath
+      operate_type: switch_frame
+      info: 切换frame
+      is_time: 1
+    - element_info: //*[@class="btn btn-outline btn-default"][1]
+      find_type: xpath
+      operate_type: click
+      info: 点击新增
+      is_time: 1
+    - element_info: "0"
+      find_type:
+      operate_type: switch_default_frame
+      info: 切换默认frame
+      is_time: 1
+    - element_info: //iframe[contains(@src,'/dataCollection/dataCollection/add')]
+      find_type: xpath
+      operate_type: switch_frame
+      info: 切换frame
+      is_time: 1
+    - element_info: select2-territory-container
+      find_type: id
+      operate_type: click
+      info: 点击选择框
+      is_time: 1
+    - element_info: //*[@id="select2-territory-results"]/li[6]
+      find_type: xpath
+      operate_type: click
+      info: 选择军用测试仪器
+      is_time: 1
+    - element_info: proNo
+      find_type: id
+      operate_type: send_keys_and_random
+      msg:  军用测试仪器验证清单编号
+      info: 填写验证清单编号
+    - element_info: baseProModel
+      find_type: id
+      operate_type: send_keys_and_random
+      msg:  军用测试仪器型号规格
+      info: 填写型号规格
+    - element_info: catId
+      find_type: id
+      operate_type: click
+      info: 点击类别
+      is_time: 1
+    - element_info: sel_ul_catId_1_switch
+      find_type: id
+      operate_type: click
+      info: 点击器件类别
+      is_time: 1
+    - element_info: catId
+      find_type: id
+      operate_type: click
+      info: 点击类别
+      is_time: 1
+    - element_info: sel_ul_catId_3_switch
+      find_type: id
+      operate_type: click
+      info: 点击类别
+      is_time: 1
+    - element_info: sel_ul_catId_5_span
+      find_type: id
+      operate_type: click
+      info: 点击类别-太赫兹测试仪器
+      is_time: 1
+    - element_info: proName
+      find_type: id
+      operate_type: send_keys_and_random
+      msg:  军用测试仪器产品名称
+      info: 填写产品名称
+    - element_info: develoOrg
+      find_type: id
+      operate_type: send_keys
+      msg:  军用测试仪器产品研制单位
+      info: 填写产品研制单位
+    - element_info: standardDetailName
+      find_type: id
+      operate_type: send_keys
+      msg:  军用测试仪器详细规范名称
+      info: 填写详细规范名称
+    - element_info: otherParameters
+      find_type: id
+      operate_type: send_keys
+      msg:  军用测试仪器其他参数
+      info: 填写其他参数
+    - element_info: select2-sex_0-container
+      find_type: id
+      operate_type: click
+      info: 点击选择性能参数
+      is_time: 1
+    - element_info: //li[contains(@id,'频率范围')]
+      find_type: xpath
+      operate_type: click
+      info: 点击选择频率范围
+    - element_info: //input[@class='form-control mr20 attr-input' and @placeholder='最小值']
+      find_type: xpath
+      operate_type: send_keys
+      msg:  111
+      info: 填写最小值
+    - element_info: //input[@class='form-control mr20 attr-input' and @placeholder='最大值']
+      find_type: xpath
+      operate_type: send_keys
+      msg:  222
+      info: 填写最大值
+    - element_info: //input[@class='form-control mr20 attr-input' and @placeholder='典型值']
+      find_type: xpath
+      operate_type: send_keys
+      msg:  155
+      info: 填写典型值
+    - element_info: //input[@class='form-control mr20 attr-input' and @placeholder='计量单位']
+      find_type: xpath
+      operate_type: send_keys
+      msg:  V
+      info: 填写计量单位
+    - element_info: //img[@class='mr20 add']
+      find_type: xpath
+      operate_type: click
+      info: 点击增加性能参数列
+    - element_info: select2-sex_1-container
+      find_type: id
+      operate_type: click
+      info: 点击选择性能参数
+      is_time: 1
+    - element_info: //li[contains(@id,'可靠性')]
+      find_type: xpath
+      operate_type: click
+      info: 点击选择可靠性
+    - element_info: //input[@class='form-control mr20 attr-input' and @placeholder='最小值']
+      find_type: xpath
+      operate_type: send_keys
+      msg:  222
+      info: 填写最小值
+    - element_info: //input[@class='form-control mr20 attr-input' and @placeholder='最大值']
+      find_type: xpath
+      operate_type: send_keys
+      msg:  333
+      info: 填写最大值
+    - element_info: //input[@class='form-control mr20 attr-input' and @placeholder='典型值']
+      find_type: xpath
+      operate_type: send_keys
+      msg:  255
+      info: 填写典型值
+    - element_info: //input[@class='form-control mr20 attr-input' and @placeholder='计量单位']
+      find_type: xpath
+      operate_type: send_keys
+      msg:  Ω
+      info: 填写计量单位
+    - element_info: select2-autonomousLevel-container
+      find_type: id
+      operate_type: click
+      info: 点击自主可控程度
+    - element_info: //*[@id="select2-autonomousLevel-results"]/li[2]
+      find_type: xpath
+      operate_type: click
+      info: 点击选择A级别
+    - element_info: select2-stableSupplyCapacity-container
+      find_type: id
+      operate_type: click
+      info: 点击稳定供应能力
+    - element_info: //*[@id="select2-stableSupplyCapacity-results"]/li[2]
+      find_type: xpath
+      operate_type: click
+      info: 点击选择优秀
+    - element_info: select2-maturityLevel-container
+      find_type: id
+      operate_type: click
+      info: 点击成熟度等级
+    - element_info: //*[@id="select2-maturityLevel-results"]/li[2]
+      find_type: xpath
+      operate_type: click
+      info: 点击选择优秀
+    - element_info: select2-usageScenario-container
+      find_type: id
+      operate_type: click
+      info: 点击使用场景
+    - element_info: //*[@id="select2-usageScenario-results"]/li[2]
+      find_type: xpath
+      operate_type: click
+      info: 点击战略核威慑装备
+    - element_info: modelName
+      find_type: id
+      operate_type: send_keys
+      msg:  军用测试仪器型号名称
+      info: 填写型号名称
+    - element_info: usageQuantity
+      find_type: id
+      operate_type: send_keys
+      msg:  军用测试仪器使用数量
+      info: 填写使用数量
+    - element_info: serviceTime
+      find_type: id
+      operate_type: send_keys
+      msg:  军用测试仪器使用时长
+      info: 填写使用时长
+
+    - element_info: select2-appVerMainResUnit-container
+      find_type: id
+      operate_type: switch_to_ele
+      info: 定位到应用验证主责单位
+    - element_info: select2-appVerMainResUnit-container
+      find_type: id
+      operate_type: click
+      info: 点击应用验证主责单位
+    - element_info: //*[@id="select2-appVerMainResUnit-results"]/li[2]
+      find_type: xpath
+      operate_type: click
+      info: 点击选择应用验证主责单位
+    - element_info: select2-comEvaConclusion-container
+      find_type: id
+      operate_type: click
+      info: 点击综合评价结论
+    - element_info: //*[@id="select2-comEvaConclusion-results"]/li[2]
+      find_type: xpath
+      operate_type: click
+      info: 点击选择综合评价结论
+    - element_info: appVerExpWorkUnit
+      find_type: id
+      operate_type: send_keys
+      msg:  军用测试仪器应用验任务承担施单位
+      info: 填写应用验任务承担施单位
+    - element_info: serviceConditions
+      find_type: id
+      operate_type: send_keys
+      msg:  军用测试仪器使用条件
+      info: 填写使用条件
+    - element_info: select2--container
+      find_type: id
+      operate_type: click
+      info: 点击应用验证参与单位
+    - element_info: //*[@id="select2--results"]/li[2]
+      find_type: xpath
+      operate_type: click
+      info: 点击选择陆军
+    - element_info: //img[@class='mr20 add addBtn']
+      find_type: xpath
+      operate_type: click
+      info: 点击增加应用验证参与单位参数列
+    - element_info: //*[@id="app-validation-info-t"]/tbody/tr[4]/td[2]/select
+      find_type: xpath
+      operate_type: click
+      info: 点击应用验证参与单位
+    - element_info: //*[@id="app-validation-info-t"]/tbody/tr[4]/td[2]/select/option[3]
+      find_type: xpath
+      operate_type: click
+      info: 点击选择海军
+
+    - element_info: reqListNumber
+      find_type: id
+      operate_type: send_keys_and_random
+      msg:  军用测试仪器需求清单编号
+      info: 填写需求清单编号
+    - element_info: productName
+      find_type: id
+      operate_type: send_keys
+      msg:  军用测试仪器产品名称
+      info: 填写产品名称
+    - element_info: impProModel
+      find_type: id
+      operate_type: send_keys_and_random
+      msg:  军用测试仪器型号规格
+      info: 填写型号规格
+    - element_info: manufacturer
+      find_type: id
+      operate_type: send_keys
+      msg:  军用测试仪器制造商
+      info: 填写制造商
+    - element_info: coreFunInd
+      find_type: id
+      operate_type: send_keys_and_random
+      msg:  军用测试仪器核心功能与指标
+      info: 填写核心功能与指标
+
+    - element_info: //*[@id="standarddetail"]/div[2]/div[2]/input
+      find_type: xpath
+      operate_type: send_keys
+      msg:  C:\\Users\\0413\\Documents\\测试 - 副本 (1).doc
+      info: 上传详细规范
+      is_time: 1
+    - element_info: //*[@id="appguide"]/div[2]/div[2]/input
+      find_type: xpath
+      operate_type: send_keys
+      msg:  C:\\Users\\0413\\Documents\\测试 - 副本 (2).doc
+      info: 上传应用指南
+      is_time: 1
+    - element_info: reportcompared
+      find_type: id
+      operate_type: switch_to_ele
+      info: 定位到对比报告
+      is_time: 1
+    - element_info: //*[@id="reportcompared"]/div[2]/div[2]/input
+      find_type: xpath
+      operate_type: send_keys
+      msg:  C:\\Users\\0413\\Documents\\测试 - 副本 (3).doc
+      info: 上传对比报告
+      is_time: 1
+    - element_info: //*[@id="autonomousselfeval"]/div[2]/div[2]/input
+      find_type: xpath
+      operate_type: send_keys
+      msg:  C:\\Users\\0413\\Documents\\测试 - 副本 (4).doc
+      info: 上传自主可控自评
+      is_time: 1
+    - element_info: //*[@id="identificationtestreport"]/div[2]/div[2]/input
+      find_type: xpath
+      operate_type: send_keys
+      msg:  C:\\Users\\0413\\Documents\\测试 - 副本 (5).doc
+      info: 上传鉴定检测报告
+      is_time: 1
+    - element_info: //*[@id="longstabilityselfeval"]/div[2]/div[2]/input
+      find_type: xpath
+      operate_type: send_keys
+      msg:  C:\\Users\\0413\\Documents\\测试 - 副本 (6).doc
+      info: 上传长稳自评
+      is_time: 1
+    - element_info: //*[@id="importtechnicaldocuments"]/div[2]/div[2]/input
+      find_type: xpath
+      operate_type: send_keys
+      msg:  C:\\Users\\0413\\Documents\\测试 - 副本 (7).doc
+      info: 上传进口产品技术文件（标准、手册等）
+      is_time: 1
+    - element_info: //*[@id="productmanual"]/div[2]/div[2]/input
+      find_type: xpath
+      operate_type: send_keys
+      msg:  C:\\Users\\0413\\Documents\\测试 - 副本 (8).doc
+      info: 上传产品手册
+      is_time: 1
+    - element_info: autonomousassessmentform
+      find_type: id
+      operate_type: switch_to_ele
+      info: 定位到自主可控评估表
+      is_time: 1
+    - element_info: //*[@id="autonomousassessmentform"]/div[2]/div[2]/input
+      find_type: xpath
+      operate_type: send_keys
+      msg:  C:\\Users\\0413\\Documents\\测试 - 副本 (9).doc
+      info: 上传自主可控评估表
+      is_time: 1
+    - element_info: //*[@id="longstabilityeval"]/div[2]/div[2]/input
+      find_type: xpath
+      operate_type: send_keys
+      msg:  C:\\Users\\0413\\Documents\\测试 - 副本 (10).doc
+      info: 上传长稳评价
+      is_time: 1
+    - element_info: //*[@id="comevalconreport"]/div[2]/div[2]/input
+      find_type: xpath
+      operate_type: send_keys
+      msg:  C:\\Users\\0413\\Documents\\测试 - 副本 (11).doc
+      info: 上传综合评价结论报告
+      is_time: 1
+    - element_info: //*[@id="appverscheme"]/div[2]/div[2]/input
+      find_type: xpath
+      operate_type: send_keys
+      msg:  C:\\Users\\0413\\Documents\\测试 - 副本 (12).doc
+      info: 上传应用验证方案
+      is_time: 1
+    - element_info: //*[@id="appverreport"]/div[2]/div[2]/input
+      find_type: xpath
+      operate_type: send_keys
+      msg:  C:\\Users\\0413\\Documents\\测试 - 副本 (13).doc
+      info: 上传应用验证报告
+      is_time: 1
+    - element_info: //*[@id="designdocumentsstandard"]/div[2]/div[2]/input
+      find_type: xpath
+      operate_type: send_keys
+      msg:  C:\\Users\\0413\\Documents\\测试 - 副本 (14).doc
+      info: 上传设计文件、工艺文件
+      is_time: 1
+
+    - element_info: //*[@id="form-dataCollection-add"]/div/div/button[1]
+      find_type: xpath
+      operate_type: click
+      info: 点击新增进口产品信息
+      is_time: 2
+    - element_info: //a[@class='layui-layer-btn0']
+      find_type: xpath
+      operate_type: click
+      info: 点击确认
+      is_time: 1
+    - element_info: //*[@id="form-dataCollection-add"]/div/div/button[1]
+      find_type: xpath
+      operate_type: click
+      info: 点击新增进口产品信息-定位到需求清单编号
+      is_time: 1
+
+    - element_info: reqListNumber
+      find_type: id
+      operate_type: send_keys_and_random
+      msg:  军用测试仪器需求清单编号
+      info: 填写需求清单编号
+    - element_info: productName
+      find_type: id
+      operate_type: send_keys
+      msg:  军用测试仪器产品名称
+      info: 填写产品名称
+    - element_info: impProModel
+      find_type: id
+      operate_type: send_keys_and_random
+      msg:  军用测试仪器型号规格
+      info: 填写型号规格
+    - element_info: manufacturer
+      find_type: id
+      operate_type: send_keys
+      msg:  军用测试仪器制造商
+      info: 填写制造商
+    - element_info: coreFunInd
+      find_type: id
+      operate_type: send_keys_and_random
+      msg:  军用测试仪器核心功能与指标
+      info: 填写核心功能与指标
+    - element_info: //*[@id="form-dataCollection-add"]/div/div/button[2]
+      find_type: xpath
+      operate_type: switch_to_ele
+      info: 定位到提交
+      is_time: 1
+
+    - element_info: //*[@id="form-dataCollection-add"]/div/div/button[2]
+      find_type: xpath
+      operate_type: click
+      info: 点击提交
+      is_time: 1
+    - element_info: //a[@class='layui-layer-btn0']
+      find_type: xpath
+      operate_type: click
+      info: 点击确认
+      is_time: 1
+
+#    - element_info: ul.list-group > li:nth-child(1) > div.title > a:nth-child(2)
+#      find_type: css
+#      operate_type: click
+#      info: 点击
+
+check:
+
+    - element_info: proNo
+      find_type: id
+      check: contrary
+      info: 验证不存在提交按钮
