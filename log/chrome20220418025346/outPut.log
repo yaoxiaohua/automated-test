@@ -1,0 +1,4 @@
+2022-04-18 02:53:46,965  - INFO - ----  test001_≤È—Øtest_//*[@id="kw"]_xpath_send_keys_test        ----
+2022-04-18 02:53:47,544  - INFO - ----  test001_≤È—Øtest_//*[@id="su"]_xpath_click_         ----
+2022-04-18 02:53:50,007  - INFO - ----  test001_≤È—Øtest_//*[@id="1"]/h3_xpath_ _         ----
+2022-04-18 02:53:50,007  - INFO - [CheckPoint_1]: testBLogin_ : OK

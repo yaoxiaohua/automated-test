@@ -1,28 +1,28 @@
 testinfo:
     - id: test001
-      title: 登录成功
-      info: 基础产品管理系统登录
+      title: 查询test
+      info: 百度
 
 testcase:
-    - element_info: //*[@id="signupForm"]/input[1]
+    - element_info: //*[@id="kw"]
       find_type: xpath
       operate_type: send_keys
-      msg: wxy
-      info: 输入用户名
-    - element_info: //*[@id="signupForm"]/input[2]
-      find_type: xpath
-      operate_type: send_keys
-      msg: Wxy123456
-      info: 输入密码
-      is_time: 1
-    - element_info: //*[@id="signupForm"]/button
+      msg: test
+      info: 输入test
+#    - element_info: //*[@id="signupForm"]/input[2]
+#      find_type: xpath
+#      operate_type: send_keys
+#      msg: Wxy123456
+#      info: 输入密码
+#      is_time: 1
+    - element_info: //*[@id="su"]
       find_type: xpath
       operate_type: click
       info: 点击登录
       is_time: 2
 
 check:
-    - element_info: //*[@id="page-wrapper"]/div[1]/div/div[2]/div/a/span/strong
+    - element_info: //*[@id="1"]/h3
       find_type: xpath
       check: default_check
-      info: 查找用户名成功
+      info: 查找test成功
