@@ -1,2 +1,2 @@
 # automated-test
-自动化测试
+ui自动化测试框架
