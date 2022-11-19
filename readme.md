@@ -49,7 +49,7 @@
     - ```is_time: 3``` 自定义暂停3秒
 
 - ```check``` 检查点,支持多检查点
-  - ```element_info:
+  - ```element_info:```
   - ```find_type: ids```
   - ```index: 0```
 
